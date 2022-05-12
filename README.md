@@ -7,4 +7,4 @@ Moreover, it was deemed useful to include the functionality of reading the epoch
 
 ///HOW TO USE///
 
-Place the data file in the same folder as Plot_XY.py, and make sure columns have no headers. Execute the code.
+Place the data file in the same folder as Plot_XY.py, make the necessary modifications to the script applying to your needs. Execute the code.
