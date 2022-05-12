@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import dateutil.parser
 from matplotlib.ticker import FormatStrFormatter
 
-df = pd.read_csv("data.txt", usecols=[0, 1, 2, 3], names=['col1', 'col2', 'col3', 'col4'],delim_whitespace=True)  # read exported FreeFlyer epoch text, specify columns picked from .txt, no headers
+df = pd.read_csv("data.txt", usecols=[0, 1, 2, 3, 4, 6, 8], names=['col1', 'col2', 'col3', 'col4','col5','col6','col7'],delim_whitespace=True)  # read exported FreeFlyer epoch text, specify columns picked from .txt, no headers
 
 timestamp = []
 
@@ -20,13 +20,11 @@ for i in range (a.size):
 
 print(timestamp[0])
 
-ftr = pd.read_csv("data.txt",delim_whitespace=True,usecols = [4,6,8],names = ['col1','col2','col3']) #FreeFlyer data to visualize
+y1 = df['col5']
 
-y1 = ftr['col1']
+y2 = df['col6']/1000 #manipulate data as needed
 
-y2 = ftr['col2']/1000 #manipulate data as needed
-
-y3 = ftr['col3']
+y3 = df['col7']
 
 fig, ax1 = plt.subplots()
 
