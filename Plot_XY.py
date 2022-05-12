@@ -56,6 +56,6 @@ plt.title('Satellite, Rho1 = 0')
 ax1.plot(y1,y2,linewidth=1)
 
 ax2.plot(y1,y3,c='r',linewidth=0.5)
-
+# plt.savefig("plot.png",dpi=500) #optionally save the figure in directory
 # plt.grid()
 plt.show()
